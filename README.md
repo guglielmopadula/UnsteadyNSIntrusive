@@ -8,3 +8,6 @@ Tests on the unsteady navier stokes dataset of a [RBnics Tutorial](https://githu
 |Tree                                       |0.0e+00    |1.22e-02  |2.1e-02|
 |GPR                                        |1.8e-04    |5.05e-03  |1.19-01|
 |RBF                                        |8.8e-17    |6.82e-03  |3.27-02|
+|PINN                                       |1.6e-01    |1.6e-01   |8.2e+01|
+
+PINN fail because there is a region (up and down the hole) which is small and so there probably too few points sampled by the PINN, so there the approximation is incorrect.
